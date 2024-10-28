@@ -20,6 +20,7 @@ class BasicUsageTest extends TestCase
 
         $encrypted2 = $encryption->encrypt($password, $key);
 
+
         self::assertNotEquals($encrypted2, $encrypted);
     }
 }
