@@ -1,8 +1,8 @@
 {
-    "name": "morphp/medas-placeholder",
-    "description": "Medas placeholder",
+    "name": "morphp/medas-encryption",
+    "description": "Medas encryption",
     "keywords": [
-        "placeholder"
+        "data manipulation"
     ],
     "authors": [
         {
@@ -14,7 +14,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "morphp/medas-core": "dev-dev"
+        "morphp/medas-core": "dev-dev",
+        "ext-sodium": "*"
     },
     "require-dev": {
         "morphp/medas-service-manager": "dev-dev",
@@ -22,8 +23,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Medas\\Placeholder\\": "src/",
-            "Medas\\PlaceholderTest\\": "tests/"
+            "Medas\\Encryption\\": "src/",
+            "Medas\\EncryptionTest\\": "tests/"
         }
     }
 }
