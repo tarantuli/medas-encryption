@@ -1,30 +1,33 @@
 {
-    "name": "morphp/medas-encryption",
-    "description": "Medas encryption",
-    "keywords": [
-        "data manipulation"
-    ],
-    "authors": [
-        {
-            "name": "Patrick Morpey",
-            "email": "patrick@morphp.nl"
-        }
-    ],
-    "type": "library",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "morphp/medas-core": "dev-dev",
-        "ext-sodium": "*"
-    },
-    "require-dev": {
-        "morphp/medas-service-manager": "dev-dev",
-        "phpunit/phpunit": "^9.5"
-    },
-    "autoload": {
-        "psr-4": {
-            "Medas\\Encryption\\": "src/",
-            "Medas\\EncryptionTest\\": "tests/"
-        }
+  "name": "morphp/medas-encryption",
+  "description": "Medas encryption",
+  "keywords": [
+    "data manipulation"
+  ],
+  "authors": [
+    {
+      "name": "Patrick Morpey",
+      "email": "patrick@morphp.nl"
     }
+  ],
+  "type": "library",
+  "require": {
+    "ext-sodium": "*",
+    "morphp/medas-core": "^3"
+  },
+  "require-dev": {
+    "morphp/medas-object-instantiator": "^3",
+    "morphp/medas-service-manager": "^3",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Medas\\Encryption\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Medas\\EncryptionTest\\": "tests/"
+    }
+  }
 }
